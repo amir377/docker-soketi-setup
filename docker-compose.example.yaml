@@ -1,0 +1,17 @@
+services:
+  db:
+    image: quay.io/soketi/soketi:latest
+    container_name: ${CONTAINER_NAME}
+    environment:
+      APP_ID: ${APP_ID}
+      APP_KEY: ${APP_KEY}
+      APP_SECRET: ${APP_SECRET}
+      DEBUG: 1
+    ports:
+      - "${ALLOW_HOST}:${SOKETI_PORT}:6001"
+    networks:
+      - ${NETWORK_NAME}
+
+networks:
+  ${NETWORK_NAME}:
+    external: true

@@ -1,0 +1,6 @@
+.DS_Store
+/.fleet
+/.idea
+/.vscode
+.env
+docker-compose.yaml
