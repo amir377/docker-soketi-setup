@@ -1,5 +1,5 @@
 services:
-  db:
+  soketi:
     image: quay.io/soketi/soketi:latest
     container_name: ${CONTAINER_NAME}
     environment:
